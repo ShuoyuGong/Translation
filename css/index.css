@@ -1,0 +1,16 @@
+/* **************通用样式************* */
+/* 字体图标 */
+@font-face {
+    font-family: 'iconfont';  /* project id 1512693 */
+    src: url('//at.alicdn.com/t/font_1512693_dxko0p3kotb.eot');
+    src: url('//at.alicdn.com/t/font_1512693_dxko0p3kotb.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1512693_dxko0p3kotb.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1512693_dxko0p3kotb.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1512693_dxko0p3kotb.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1512693_dxko0p3kotb.svg#iconfont') format('svg');
+}
+/* 去除BS框架默认间距 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    margin:0;
+    padding:0;
+}

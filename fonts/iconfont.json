@@ -1,0 +1,30 @@
+{
+  "id": "1470833",
+  "name": "StudyBootstrap",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2774",
+      "name": "阿里巴巴字体",
+      "font_class": "alibabaziti",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "513540",
+      "name": "后十年 手机号",
+      "font_class": "shoujihao",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "774503",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    }
+  ]
+}

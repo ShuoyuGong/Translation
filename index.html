@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<title>***实时翻译***</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        img{
+            margin: 0;
+            padding:  0;
+        }
+
+    </style>
+</head>
+<body>
+    <!-------------------- 头部开始 -------------------------------->
+    <header>
+        <!-- 顶部logo展示 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" style="vertical-align: middle;">
+                    <img src="img/translateLogo.png" style="width: 8%; vertical-align:inherit;">
+                    <p class="d-inline-block text-info" style="vertical-align:inherit;font-size: 2rem;">实时翻译</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container text-center" style="background-color: rgba(113, 187, 236, 0.301);">
+            <div class="row">
+                <div class = "col-12 mt-3" >
+                    <!-- 源语言列表 -->
+                    <select class="dropdown col-lg-3 col-md-4 col-sm-3"  style="vertical-align: middle;"id = "sourceLanguage">
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="auto">自动检测</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="zh">中文</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="yue">粤语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="wyw">文言文</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="en">英语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="jp">日语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="kor">韩语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="fra">法语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="spa">西班牙语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="ru">俄语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="de">德语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="th">泰语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="ara">阿拉伯语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="pt">葡萄牙语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="it">意大利语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="el">希腊语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="nl">荷兰语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="pl">波兰语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="bul">保加利亚语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="est">爱沙尼亚语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="dan">丹麦语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="fin">芬兰语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="cs">捷克语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="rom">罗马尼亚语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="slo">斯洛文尼亚语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="swe">瑞典语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="hu">匈牙利语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="cht">繁体中文</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="vie">越南语</option>
+                    </select>
+                    <!-- 语言转换logo -->
+                    <img src="img/Business Translation.png" style="width:3%;vertical-align: middle;" class="ml-5 mr-5">
+                    <!-- 目标语言列表 -->
+                    <select class="dropdown col-lg-3 col-md-4 col-sm-3" style="vertical-align: middle;" id="targetLanguage">
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="en">英语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="zh">中文</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="yue">粤语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="wyw">文言文</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="jp">日语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="kor">韩语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="fra">法语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="spa">西班牙语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="ru">俄语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="de">德语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="th">泰语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="ara">阿拉伯语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="pt">葡萄牙语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="it">意大利语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="el">希腊语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="nl">荷兰语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="pl">波兰语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="bul">保加利亚语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="est">爱沙尼亚语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="dan">丹麦语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="fin">芬兰语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="cs">捷克语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="rom">罗马尼亚语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="slo">斯洛文尼亚语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="swe">瑞典语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="hu">匈牙利语</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="cht">繁体中文</option>
+                        <option class=" source_Language dropdown-item  col-lg-2 col-sm-6 d-inline-block " value="vie">越南语</option>
+                    </select>
+                    <!-- 翻译按钮 -->
+                    <button type="button" class="btn btn-primary ml-5" style="width: 15%;" id="translationBtn">翻译</button>
+                </div>
+            </div>
+
+            <div class="row mt-3 text-center">
+                <!-- 源语言文本 -->
+                <div class="text-center col-6">
+                    <textarea id="originalText" class="col-12 border-info mb-3 rounded" style="height: 300px; width:95%;padding: 0.7rem; "></textarea>
+                </div>
+                <!-- 目标语言文本 -->
+                <div class="text-center col-6">
+                    <textarea id="targetText" class="col-12 border-info mb-3 rounded" style="height: 300px; width:95%;padding: 0.7rem; background-color: rgba(250, 247, 247, 0.514);"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-3.3.1.js"></script>
+	<script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/md5.js"></script>
+    <script type="text/javascript">
+        // 翻译按钮单击执行开始
+        $("#translationBtn").click(function(){
+            //获取源语言文本内容
+            var originalText = $("#originalText").val();
+            // 判断源语言不能为空
+            if(originalText == ""){
+               alert("源语言文本框不能为空");
+            }else{
+                var appid = '20191115000357443';
+                var key = 'LVII2AL238dQgjW9yuZu';
+                var salt = (new Date).getTime();
+                var query = originalText;
+                // 获取源语言语种类型
+                var from = $("#sourceLanguage option:selected").val();
+                // 获取目标语言语种类型
+                var to = $("#targetLanguage option:selected").val();;
+                var str1 = appid + query + salt +key;
+                var sign = MD5(str1);
+                $.ajax({
+                    url: 'http://api.fanyi.baidu.com/api/trans/vip/translate',
+                    type: 'get',
+                    dataType: 'jsonp',
+                    data: {
+                        q: query,
+                        appid: appid,
+                        salt: salt,
+                        from: from,
+                        to: to,
+                        sign: sign
+                    },
+                    success: function (data) {
+                        // 将翻译完成的语言写入目标语言文本框内
+                        $("#targetText").val(data.trans_result[0]["dst"]);
+                    } 
+                });
+            }
+        })
+        // 翻译按钮单击执行结束
+    </script>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 样式 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<title>bootstrap4-项目实战</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!--------------------------------头部-Begin------------------------------------>
+<header id="R_header">
+    <!-- 上部分开始 -->
+    <div class="top-bar d-none d-sm-none d-md-none d-lg-block text-center text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="top-bar-1 col-md-3">
+                    <a href="" class="text-muted">
+                        <i class = "iconfont">&#xe697;</i>
+                        <span>关注微信公众号</span>
+                        <img src="icon/ewm.jpg" alt="" style="width: 120px;">
+                    </a>
+                </div>
+                <div class="top-bar-2 col-md-4">
+                    <i class="iconfont">&#xe62f;</i>
+                    <span>188-8888-8888</span>
+                </div>
+                <div class="top-bar-3 col-md-2">
+                    <a href="" class="text-muted">校企合作</a>
+                    <a href="" class="text-muted">培训师</a>
+                </div>
+                <div class="top-bar-4 col-md-3">
+                    <a type="button" class="btn btn-success btn-sm"> 免费注册</a>
+                    <a class="ml-2 text-muted">立即登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 上部分结束 -->
+
+
+    <!-- 下部分 -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar_neck">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="iconfont" style="font-size: 35px;">&#xe600;</i>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#neck_menu" aria-controls="neck_menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="neck_menu">
+        <ul class="navbar-nav mr-auto" id="ListOne">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                学科学习 </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Web前端+全栈</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Python+人工智能</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">JavaEE+大数据</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">服务体系</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1">软件工具</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1">专题学习</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1">就业指导</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+</header>
+<!-- -----------------------------头部-end-------------------------------------->
+
+<!--------------------------------轮播图-Begin------------------------------------>
+<section id="R_carouse">
+    <div id="R_carouse_1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#R_carouse_1" data-slide-to="0" class="active"></li>
+            <li data-target="#R_carouse_1" data-slide-to="1"></li>
+            <li data-target="#R_carouse_1" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-sm-img = "icon/sm1.jpeg" data-lg-img = "icon/lg1.jpg">
+        </div>
+        <div class="carousel-item" data-sm-img = "icon/sm2.jpg" data-lg-img = "icon/lg2.jpeg">
+        </div>
+        <div class="carousel-item" data-sm-img = "icon/sm3.jpg" data-lg-img = "icon/lg3.jpeg">
+        </div>
+        </div>
+        <a class="carousel-control-prev" href="#R_carouse_1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#R_carouse_1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+<!-- -----------------------------轮播图-end-------------------------------------->
+
+<!--------------------------------热门课程-Begin------------------------------------>
+<section id="R_hot">
+    <!-- 标题 -->
+    <div class="text-center mt-3 mb-3">
+        <h2><strong>热门课程</strong></h2>
+    </div>
+    <!-- 内容 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="media d-flex align-items-center m-1 mb-3 bg-light p-2">
+                    <div class="media-left mr-2">
+                        <img src="icon/Tea01.jpg" class="mr-3 media-object img-fluid img-thumbnail" width="100";">
+                    </div>
+                    <div class="media-body">
+                        <h6 class="media-heading"><span class="text-danger">【热】</span>H5+C3从入门到贯通</h6>
+                        <p class="text-muted">8大案例全程驱动教学</p> 
+                    </div>
+                </div>
+            </div> 
+
+            <div class="col-md-6 col-lg-4">
+                <div class="media d-flex align-items-center m-1 mb-3 bg-light p-2">
+                    <div class="media-left mr-2">
+                        <img src="icon/Tea02.jpg" class="mr-3 media-object img-fluid img-thumbnail" width="100";">
+                    </div>
+                    <div class="media-body">
+                        <h6 class="media-heading"><span class="text-success">【新】</span>Python项目实战-PYQT5</h6>
+                        <p class="text-muted">368个课时打造最全QT</p> 
+                    </div>
+                </div>
+            </div> 
+
+            <div class="col-md-6 col-lg-4">
+                <div class="media d-flex align-items-center m-1 mb-3 bg-light p-2">
+                    <div class="media-left mr-2">
+                        <img src="icon/Tea03.jpg" class="mr-3 media-object img-fluid img-thumbnail" width="100";">
+                    </div>
+                    <div class="media-body">
+                        <h6 class="media-heading"><span class="text-warning">【战】</span>JavaEE-SSH三大框架</h6>
+                        <p class="text-muted">就业实战第一篇</p> 
+                    </div>
+                </div>
+            </div> 
+
+            <div class="col-md-6 col-lg-4">
+                <div class="media d-flex align-items-center m-1 mb-3 bg-light p-2">
+                    <div class="media-left mr-2">
+                        <img src="icon/Tea04.jpg" class="mr-3 media-object img-fluid img-thumbnail" width="100";">
+                    </div>
+                    <div class="media-body">
+                        <h6 class="media-heading"><span class="text-warning">【战】</span>Vue+Node拼多多项目实战</h6>
+                        <p class="text-muted">打通前后端，联通数据库</p> 
+                    </div>
+                </div>
+             </div> 
+
+            <div class="col-md-6 col-lg-4">
+                <div class="media d-flex align-items-center m-1 mb-3 bg-light p-2">
+                    <div class="media-left mr-2">
+                        <img src="icon/Tea05.jpg" class="mr-3 media-object img-fluid img-thumbnail" width="100";">
+                    </div>
+                    <div class="media-body">
+                        <h6 class="media-heading"><span class="text-danger">【火】</span>JavaEE-SSH综合项目应用</h6>
+                        <p class="text-muted">博客系统前后端统一部署</p> 
+                    </div>
+                </div>
+            </div> 
+
+            <div class="col-md-6 col-lg-4">
+                <div class="media d-flex align-items-center m-1 mb-3 bg-light p-2">
+                    <div class="media-left mr-2">
+                        <img src="icon/Tea06.jpg" class="mr-3 media-object img-fluid img-thumbnail" width="100";">
+                    </div>
+                    <div class="media-body">
+                        <h6 class="media-heading"><span class="text-danger">【热】</span>Java Script高级+设计模式</h6>
+                        <p class="text-muted">原型链、设计模式、面向对象</p> 
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+<!-- -----------------------------热门课程-end-------------------------------------->
+
+
+<!--------------------------------产品中心-Begin------------------------------------>
+<section id="product" style="overflow: hidden;">
+    <div class="container">
+        <div class="row" data-spy="scroll" data-target="myTab">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">在线大学</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">会员专享</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">优质视频</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">线下沙龙</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">精品课程</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">上课小册</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">面试宝典</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">下课阅读</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">小料公益</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7 text-left">
+                                <img src="icon/ewm.jpg" class="mt-4" style="width: 140px;">
+                                <p class="text-muted mt-3">更多资讯欢迎<br>关注撩课学院</p>
+                                <span class="badge-light mt-4 rounded form-control-lg ">HTML5+全栈/Python+人工智能/JavaEE+大数据</span>
+                                <h2 class="mt-5"><b>欢迎来到IT人的在线大学<span class="text-danger"> /</span> 撩课学院 <span class = "text-danger"> /</span></b></h2>
+                                <button href="#" class=" btn btn-primary rounded btn-lg mt-4 mr-4">课程咨询</button>
+                                <button href="#" class=" btn btn-outline-primary rounded btn-lg mt-4">课程咨询</button>
+                            </div>
+                            <div class="col-md-5 text-right">
+                                <img src="icon/lg1.jpg" style="width: 500px;" class="mt-5 d-none d-sm-none d-md-none d-lg-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="icon/lg1.jpg" style="width: 500px;" class="mt-2 d-none d-sm-none d-md-none d-lg-block">
+                            </div>
+                            <div class="col-md-8 text-right">
+                                <h1 class="text-warning mb-4 mt-4 ml-5">撩课学院会员</h1>
+                                <p class="ml-5">汇聚名师，为你呈现前端、后端、移动端、大数据、人工智能等从零基础到项目<br>实战连载课程内容。专属的会员社群和私人定制服务，1年365天持续更新课程紧<br>跟前沿技术！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <img src="icon/ewm.jpg" class="mt-4" style="width: 140px;">
+                                <p class="text-muted mt-3">更多资讯欢迎<br>关注撩课学院</p>
+                                <span class="badge-light mt-4 rounded form-control-lg ">HTML5+全栈/Python+人工智能/JavaEE+大数据</span>
+                                <h2 class="mt-5"><b>欢迎来到IT人的在线大学<span class="text-danger"> /</span> 撩课学院 <span class = "text-danger"> /</span></b></h2>
+                                <button href="#" class=" btn btn-primary rounded btn-lg mt-4 mr-4">课程咨询</button>
+                                <button href="#" class=" btn btn-outline-primary rounded btn-lg mt-4">课程咨询</button>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="icon/lg1.jpg" style="width: 500px;" class="mt-5 d-none d-sm-none d-md-none d-lg-blockd">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+</section>
+<!-- -----------------------------产品中心-end-------------------------------------->
+
+
+<!--------------------------------about us-Begin------------------------------------>
+<section id="R_About">
+     <!-- 标题 -->
+     <div class="text-center mt-3 mb-3">
+        <h2><strong>关于我们</strong></h2>
+    </div>
+    <div class="conrainer">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1 ">
+                <p class="text-muted ml-lg-5 mt-lg-5">专注课程质量,提供JavaEE学科,Web前端,Python学科编程技术!,云课堂... 设计软件一课通关零基础系统学摄影 设计师常用的十款软件 设计软件基础 |</p>
+                <p class="text-muted  ml-lg-5">专注课程质量,提供JavaEE学科,Web前端,Python学科编程技术!,云课堂... 设计软件一课通关 零基础系统学摄影 设计师常用的十款软件 设计软件基础 |</p>
+                <p class="text-muted  ml-lg-5">专注课程质量,提供JavaEE学科,Web前端,Python学科编程技术!,云课堂... 设计软件一课通关 零基础系统学摄影 设计师常用的十款软件 设计软件基础 |</p>
+                <p class="text-muted  ml-lg-5">专注课程质量,提供JavaEE学科,Web前端,Python学科编程技术!,云课堂... 设计软件一课通关 零基础系统学摄影 设计师常用的十款软件 设计软件基础 |</p>
+                <p class="text-muted  ml-lg-5 ">专注课程质量,提供JavaEE学科,Web前端,Python学科编程技术!,云课堂... 设计软件一课通关 零基础系统学摄影 设计师常用的十款软件 设计软件基础 |</p>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 mb-sm-3">
+                <img src="icon/sm2.jpg" class="img-thumbnail ml-lg-5">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- -----------------------------about us-end-------------------------------------->
+
+<!--------------------------------友情链接-Begin------------------------------------>
+<section id="Fl" class = "d-none d-md-none d-lg-block ">
+     <!-- 标题 -->
+     <div class="text-center mt-3 mb-3">
+            <h2><strong>友情链接</strong></h2>
+    </div>
+    <div class="container">
+        <div class="row mt-4 d-flex justify-content-around align-items-center">
+            <ul class="nav friendsLink text-center pb-3" id="myTab" role="tablist ">
+                <li class="nav-item mr-lg-5 mr-sm-2 mr-md-3"><img src="icon/华为.png" alt=""></li>
+                <li class="nav-item mr-lg-5 mr-sm-2 mr-md-3"><img src="icon/facebook.png" alt=""></li>
+                <li class="nav-item mr-lg-5 mr-sm-2 mr-md-3"><img src="icon/ins.png" alt=""></li>
+                <li class="nav-item mr-lg-5 mr-sm-2 mr-md-3"><img src="icon/teiittwer.png" alt=""></li>
+                <li class="nav-item mr-lg-5 mr-sm-2 mr-md-3"><img src="icon/anzhuo.png" alt=""></li>
+                <li class="nav-item mr-lg-5 mr-sm-2 mr-md-3"><img src="icon/aodi.png" alt=""></li>
+                <li class="nav-item mr-lg-5 mr-sm-2 mr-md-3"><img src="icon/mi.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- -----------------------------友情链接-end-------------------------------------->
+
+<!-- -----------------------------友情链接-Begin-------------------------------------->
+<footer>
+    <div class="container text-muted border-top pt-3">
+        <div class="row">
+            <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block">
+                <div class="row ">
+                    <ul class="offset-2 col-lg-4">
+                        <li>关于我们</li>
+                        <li>课程介绍</li>
+                        <li>热门课程</li>
+                    </ul>
+                    <ul class="col-lg-6">
+                        <li>名师授课</li>
+                        <li>课堂互动</li>
+                        <li>联系我们</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center">
+                <h6>公司地址：河南省郑州市金水区河南职业技术学院</h6>
+                <h6>联系电话：17630345000</h6>
+                <h6>E-Mail：2788696894@qq.com</h6>
+            </div>
+            <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block">
+                <i class="iconfont">&#xe666;</i>
+                <i class="iconfont">&#xe73b;</i>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- -----------------------------友情链接-end-------------------------------------->
+
+
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
